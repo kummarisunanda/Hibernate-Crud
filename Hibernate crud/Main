@@ -1,0 +1,24 @@
+package com.tap.main;
+
+import com.tap.entity.Employee;
+import com.tap.manager.HibernateManager;
+
+public class EmployeeMain {
+
+	public static void main(String[] args) {
+		HibernateManager hm=new HibernateManager();
+        hm.connect();
+//        hm.fetchOnEmail("sachin@gmail.com");
+//        hm.fetchOnId(4);
+       
+//        Employee e=new Employee(4,"akhila","Developer",30000,"akhila@gmail.com","345678");
+//        hm.add(e);
+        
+//        hm.fetchAll();
+        
+//        hm.updateData(7,"akhila_1234@gmail.com");
+        
+        hm.deleteEmployee(4);
+	}
+
+}
